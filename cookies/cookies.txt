@@ -1,14 +1,6 @@
 # Netscape HTTP Cookie File
-# https://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file! Do not edit.
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
 
-.youtube.com	TRUE	/	TRUE	1754204715	VISITOR_INFO1_LIVE	1HmRW41jrsQ
-.youtube.com	TRUE	/	TRUE	1754204715	VISITOR_PRIVACY_METADATA	CgJJRBIEGgAgMQ%3D%3D
-.youtube.com	TRUE	/	TRUE	1754199774	__Secure-ROLLOUT_TOKEN	CNLM94vpkfeJJRCuoczYp6mLAxiuoczYp6mLAw%3D%3D
-.youtube.com	TRUE	/	TRUE	1773212716	PREF	tz=Asia.Makassar
-.youtube.com	TRUE	/	TRUE	1738648433	CONSISTENCY	AKreu9tunRORXp8JeEsF0Jrgej5TogNS3Mlulq8C_w4smhuE_5iG34sLctpqpI2oTp6z4DgWOSG8cfAyzgVbBR7ur62lvVDteEheBvNOziX_g6litwf_sf4
-.youtube.com	TRUE	/	TRUE	1738652927	GPS	1
-.youtube.com	TRUE	/	FALSE	1738651751	ST-yk9zmn	csn=FRgdSyf2kLiOkVl1&itct=CJkBEPxaGAIiEwiUq7a8tqmLAxUeKbcAHaalJ6IyBnNlYXJjaFIJdGFuYm95a3VumgEDEPQk
-.youtube.com	TRUE	/	FALSE	1738651824	ST-tuhr1a	csn=giBQmy8ZvpWTaePI&itct=CBEQpIEJGAIiEwjLjfLetqmLAxWmdp0JHQjwBeM%3D
-.youtube.com	TRUE	/	FALSE	1738651826	ST-1hf9zq	csn=6RPTkJ2NC5Cikn5p&itct=CDQQ_mEiEwjv_pzgtqmLAxXskdgFHQaMH2Y%3D
-.youtube.com	TRUE	/	TRUE	0	YSC	ZW4to0Ow6V0
+.youtube.com	TRUE	/	TRUE	1738655211	GPS	1
+.youtube.com	TRUE	/	TRUE	1773213618	PREF	f6=40000000&tz=Asia.Makassar&f7=100&f4=4000000
