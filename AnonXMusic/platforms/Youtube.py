@@ -181,7 +181,7 @@ class YouTubeAPI:
             "vidid": vidid,
             "duration_min": duration_min,
             "thumb": thumbnail,
-            "cookiefile": cookiefile(),
+            "cookiefile": cookies(),
         }
         return track_details, vidid
 
@@ -217,7 +217,7 @@ class YouTubeAPI:
                             "ext": format["ext"],
                             "format_note": format["format_note"],
                             "yturl": link,
-                            "cookiefile": cookiefile(),
+                            "cookiefile": cookies(),
                         }
                     )
         return formats_available, link
@@ -257,7 +257,7 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "cookiefile": cookiefile(),
+                "cookiefile": cookies(),
                 "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
@@ -275,7 +275,7 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "cookiefile": cookiefile(),
+                "cookiefile": cookies(),
                 "format": "(bestvideo[height<=?720][width<=?1280][ext=mp4])+(bestaudio[ext=m4a])",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
@@ -301,7 +301,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookiefile(),
+                "cookiefile": cookies(),
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
             }
@@ -345,7 +345,7 @@ class YouTubeAPI:
                 proc = await asyncio.create_subprocess_exec(
                     "yt-dlp",
                     "--cookies",
-                    cookiefile(),
+                    cookies(),
                     "-g",
                     "-f",
                     "best[height<=?720][width<=?1280]",
