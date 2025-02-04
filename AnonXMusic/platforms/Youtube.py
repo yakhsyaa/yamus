@@ -11,13 +11,17 @@ from youtubesearchpython.__future__ import VideosSearch
 from AnonXMusic.utils.database import is_on_off
 from AnonXMusic.utils.formatters import time_to_seconds
 
-def cookiefile():
-    cookie_dir = "cookies"
-    cookies_files = [f for f in os.listdir(cookie_dir) if f.endswith(".txt")]
-
-    cookie_file = os.path.join(cookie_dir, cookies_files[0])
-    return cookie_file
-
+def cookies():
+    folder_path = f"{os.getcwd()}/cookies"
+    txt_files = [file for file in os.listdir(folder_path) if file.endswith(".txt")]
+    if not txt_files:
+        raise FileNotFoundError(
+            "No Cookies found in cookies directory make sure your cookies file written  .txt file"
+        )
+    cookie_txt_file = random.choice(txt_files)
+    cookie_txt_file = os.path.join(folder_path, cookie_txt_file)
+    return cookie_txt_file
+    
 async def shell_cmd(cmd):
     proc = await asyncio.create_subprocess_shell(
         cmd,
